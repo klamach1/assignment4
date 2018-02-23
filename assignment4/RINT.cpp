@@ -17,23 +17,33 @@ RINT::RINT(int theInt) {
     
 }
 
-RINT &RINT::operator+(int theInt) {
-    intVal += theInt;
+RINT operator+(int theInt, RINT theRint) {
+    return theRint.intVal += theInt;
+}
+
+RINT RINT::operator+(const RINT& theRint) {
+    RINT result;
+    result.intVal = this->intVal + theRint.intVal;
+    return result;
+}
+
+RINT RINT::operator+() {
+    intVal = +intVal;
     return *this;
 }
 
-RINT &RINT::operator+(RINT theRint) {
-    *this = theRint.operator+(intVal);
-    return *this;
+RINT operator-(int theInt, RINT theRint) {
+    return theRint.intVal -= theInt;
 }
 
-RINT &RINT::operator-(int theInt) {
-    intVal -= theInt;
-    return *this;
+RINT RINT::operator-(const RINT& theRint) {
+    RINT result;
+    result.intVal = this->intVal - theRint.intVal;
+    return result;
 }
 
-RINT &RINT::operator-(RINT theRint) {
-    *this = theRint.operator-(intVal);
+RINT RINT::operator-() {
+    intVal = -intVal;
     return *this;
 }
 
@@ -43,12 +53,12 @@ RINT &RINT::operator=(int theInt) {
 }
 
 std::ostream &operator<<( std::ostream &output, const RINT &rInt ) {
-    output << rInt;
+    output << rInt.intVal;
     return output;
 }
 
 std::istream &operator>>( std::istream &input, RINT &rInt ) {
     
-    input >> rInt;
+    input >> rInt.intVal;
     return input;
 }

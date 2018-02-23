@@ -18,13 +18,17 @@ public:
     RINT();
     RINT(int);
     
-    RINT &operator+(int);
+    friend RINT operator+(int, RINT);
     
-    RINT &operator+(RINT);
+    RINT operator+();
     
-    RINT &operator-(int);
+    RINT operator+(const RINT&);
     
-    RINT &operator-(RINT);
+    friend RINT operator-(int, RINT);
+    
+    RINT operator-();
+    
+    RINT operator-(const RINT&);
     
     RINT &operator=(int);
     
