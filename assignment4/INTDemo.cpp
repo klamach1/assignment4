@@ -16,7 +16,7 @@ using std::abs;
 
 // note - you may need to change the definition of the main function to
 // be consistent with what your C++ compiler expects.
-int Imain()
+int main()
 {
     cout << endl << "A test of the INT class  (07/05/13)" << endl << endl;
     INT x,y = 6;
