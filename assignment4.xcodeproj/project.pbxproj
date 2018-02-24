@@ -49,6 +49,7 @@
 		2609CE35203EFEC600B41ED2 = {
 			isa = PBXGroup;
 			children = (
+				68D98B5A2041A946000643F6 /* assignment4b */,
 				2609CE40203EFEC600B41ED2 /* assignment4 */,
 				2609CE3F203EFEC600B41ED2 /* Products */,
 			);
@@ -66,13 +67,20 @@
 			isa = PBXGroup;
 			children = (
 				2609CE4C203F004700B41ED2 /* INTDemo.cpp */,
-				2609CE4E203F008E00B41ED2 /* RINTDemo.cpp */,
 				2609CE50203F00C000B41ED2 /* INT.cpp */,
 				2609CE51203F00C000B41ED2 /* INT.h */,
-				2609CE53203F00E200B41ED2 /* RINT.cpp */,
-				2609CE54203F00E200B41ED2 /* RINT.h */,
 			);
 			path = assignment4;
+			sourceTree = "<group>";
+		};
+		68D98B5A2041A946000643F6 /* assignment4b */ = {
+			isa = PBXGroup;
+			children = (
+				2609CE4E203F008E00B41ED2 /* RINTDemo.cpp */,
+				2609CE54203F00E200B41ED2 /* RINT.h */,
+				2609CE53203F00E200B41ED2 /* RINT.cpp */,
+			);
+			path = assignment4b;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
