@@ -17,8 +17,8 @@ RINT::RINT(int theInt) {
     
 }
 
-RINT operator+(int theInt, RINT theRint) {
-    return theRint.intVal += theInt;
+int operator+(int theInt, const RINT &theRint) {
+    return theInt += theRint.intVal;
 }
 
 RINT RINT::operator+(const RINT& theRint) {
@@ -27,18 +27,30 @@ RINT RINT::operator+(const RINT& theRint) {
     return result;
 }
 
+RINT RINT::operator+(int theInt) {
+    RINT result;
+    result.intVal = this->intVal + theInt;
+    return result;
+}
+
 RINT RINT::operator+() {
     intVal = +intVal;
     return *this;
 }
 
-RINT operator-(int theInt, RINT theRint) {
-    return theRint.intVal -= theInt;
+int operator-(int theInt, const RINT& theRint) {
+    return theInt -= theRint.intVal;
 }
 
 RINT RINT::operator-(const RINT& theRint) {
     RINT result;
     result.intVal = this->intVal - theRint.intVal;
+    return result;
+}
+
+RINT RINT::operator-(int theInt) {
+    RINT result;
+    result.intVal = this->intVal - theInt;
     return result;
 }
 

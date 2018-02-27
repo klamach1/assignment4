@@ -117,7 +117,7 @@ int main()
     x = 33;
     x -= 17;
     cout << "If set x = 33 then x -= 17 so x now equals " << x << " (should be 16)" << endl;
-    
+    x += y;
     cout << endl;
     cout << "Testing call to functions: " << endl;
     cout << "-------------------------------------- " << endl;

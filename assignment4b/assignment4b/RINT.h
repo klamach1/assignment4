@@ -16,19 +16,24 @@ class RINT {
 public:
     
     RINT();
+    
     RINT(int);
     
-    friend RINT operator+(int, RINT);
+    friend int operator+(int, const RINT&);
     
     RINT operator+();
     
     RINT operator+(const RINT&);
     
-    friend RINT operator-(int, RINT);
+    RINT operator+(int);
+    
+    friend int operator-(int, const RINT&);
     
     RINT operator-();
     
     RINT operator-(const RINT&);
+    
+    RINT operator-(int);
     
     RINT &operator=(int);
     

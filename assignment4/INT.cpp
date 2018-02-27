@@ -44,8 +44,18 @@ INT INT::operator--(int theInt) {
     return tempINT;
 }
 
+INT &INT::operator+=(const INT &theInt) {
+    intVal += theInt.intVal;
+    return *this;
+}
+
 INT &INT::operator+=(int theInt) {
     intVal += theInt;
+    return *this;
+}
+
+INT &INT::operator-=(const INT &theInt) {
+    intVal -= theInt.intVal;
     return *this;
 }
 

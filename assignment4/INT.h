@@ -29,7 +29,11 @@ public:
     //postfix
     INT operator--(int);
     
+    INT &operator+=(const INT&);
+    
     INT &operator+=(int);
+    
+    INT &operator-=(const INT&);
     
     INT &operator-=(int);
     
