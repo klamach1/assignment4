@@ -5,6 +5,9 @@
 //  Created by Chris Lawrence on 2/22/18.
 //  Copyright © 2018 Chris Lawrence. All rights reserved.
 //
+// Implementation of INT Class that represents an object
+// version of an integer.
+//
 
 #include "INT.h"
 
