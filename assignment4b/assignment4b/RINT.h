@@ -1,5 +1,5 @@
 //
-//  RINT.hpp
+//  RINT.h
 //  assignment4
 //
 //  Created by Chris Lawrence on 2/22/18.

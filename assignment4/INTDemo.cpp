@@ -18,7 +18,7 @@ using std::abs;
 // be consistent with what your C++ compiler expects.
 int main()
 {
-    cout << endl << "A test of the INT class  (07/05/13)" << endl << endl;
+    cout << endl << "A test of the INT class  (3/1/18)" << endl << endl;
     INT x,y = 6;
     INT w = 9;
     int a = 5, b = 2;

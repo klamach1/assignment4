@@ -15,7 +15,7 @@ using std::endl;
 // be consistent with what your C++ compiler expects.
 int main()
 {
-    cout << endl << "A test of the RINT class  (2/10/13)" << endl << endl;
+    cout << endl << "A test of the RINT class  (3/1/18)" << endl << endl;
     
     RINT x, y = 4;
     int a = 5, b = 2;
