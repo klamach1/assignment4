@@ -20,32 +20,46 @@
 class INT {
 public:
     
+    //ctors
     INT();
     INT(int theInt);
     
+    //operator overload for the implicit conversion
+    //of an INT to an int
     operator int();
     
-    //prefix
+    //prefix increment override
     INT &operator++();
-    //postfix
+    
+    //postfix increment override
     INT operator++(int);
     
-    //prefix
+    //prefix decrement override
     INT &operator--();
-    //postfix
+    
+    //postfix decrement override
     INT operator--(int);
     
+    //override for += operator taking a
+    //native INT type
     INT &operator+=(const INT&);
     
+    //override for += operator taking an
+    //int type, prevents conversion overhead
     INT &operator+=(int);
     
+    //override for -= operator taking a
+    //native INT type
     INT &operator-=(const INT&);
     
+    //override for -= operator taking an
+    //int type, prevents conversion overhead
     INT &operator-=(int);
     
     
     
 private:
+    //holds value of INT
     int intVal;
 };
 

@@ -8,6 +8,8 @@
 // Implementation of INT Class that represents an object
 // version of an integer.
 //
+// See header for relevant comments
+//
 
 #include "INT.h"
 
@@ -23,24 +25,25 @@ INT::operator int() {
     return intVal;
 }
 
-//prefix
+//prefix increment
 INT &INT::operator++() {
     ++intVal;
     return *this;
 }
-//postfix
+//postfix increment
 INT INT::operator++(int) {
     INT tempINT = *this;
     ++intVal;
     return tempINT;
 }
 
-//prefix
+//prefix increment
 INT &INT::operator--() {
     --intVal;
     return *this;
 }
-//postfix
+
+//postfix increment
 INT INT::operator--(int theInt) {
     INT tempINT = *this;
     --intVal;

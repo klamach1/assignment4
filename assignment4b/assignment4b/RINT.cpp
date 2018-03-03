@@ -5,6 +5,11 @@
 //  Created by Chris Lawrence on 2/22/18.
 //  Copyright © 2018 Chris Lawrence. All rights reserved.
 //
+// Implementation of RINT Class that represents a restricted object
+// version of an integer.
+//
+// See header for relevant comments
+
 
 #include "RINT.h"
 
@@ -23,13 +28,13 @@ int operator+(int theInt, const RINT &theRint) {
 
 RINT RINT::operator+(const RINT& theRint) {
     RINT result;
-    result.intVal = this->intVal + theRint.intVal;
+    result.intVal = intVal + theRint.intVal;
     return result;
 }
 
 RINT RINT::operator+(int theInt) {
     RINT result;
-    result.intVal = this->intVal + theInt;
+    result.intVal = intVal + theInt;
     return result;
 }
 
@@ -44,13 +49,13 @@ int operator-(int theInt, const RINT& theRint) {
 
 RINT RINT::operator-(const RINT& theRint) {
     RINT result;
-    result.intVal = this->intVal - theRint.intVal;
+    result.intVal = intVal - theRint.intVal;
     return result;
 }
 
 RINT RINT::operator-(int theInt) {
     RINT result;
-    result.intVal = this->intVal - theInt;
+    result.intVal = intVal - theInt;
     return result;
 }
 
